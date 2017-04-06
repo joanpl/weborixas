@@ -15,13 +15,28 @@
         <version>1.5.2.RELEASE</version>
     </parent>
     
-  <dependencies>
+    
+    
+    
+ <dependencyManagement>
+    <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-releasetrain</artifactId>
+        <version>Gosling-SR1</version>
+        <type>pom</type>
+        <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+  <dependencies>
+    	<dependency>
+      		<groupId>junit</groupId>
+      		<artifactId>junit</artifactId>
+      		<version>3.8.1</version>
+      		<scope>test</scope>
+    	</dependency>
     
        <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -38,5 +53,64 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
      
+     
+        <dependency>
+        	<groupId>com.amazonaws</groupId>
+        	<artifactId>aws-java-sdk-dynamodb</artifactId>
+        	<version>1.11.34</version>
+    	</dependency>
+    	<dependency>
+        	<groupId>com.github.derjust</groupId>
+        	<artifactId>spring-data-dynamodb</artifactId>
+        	<version>4.3.1</version>
+    	</dependency>
+     
+		<!--Dependency:-->
+		
+		   <dependency>
+		      <groupId>com.amazonaws</groupId>
+		      <artifactId>DynamoDBLocal</artifactId>
+		      <version>[1.11,2.0)</version>
+		   </dependency>
+		
+
   </dependencies>
-</project>
+  
+
+    <properties>
+        <java.version>1.8</java.version>
+            <maven.compiler.source>1.8</maven.compiler.source>
+    		<maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+  
+  
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+        
+        <!--Custom repository:-->
+         <repository>
+      		<id>dynamodb-local-oregon</id>
+      		<name>DynamoDB Local Release Repository</name>
+      		<url>https://s3-us-west-2.amazonaws.com/dynamodb-local/release</url>
+   		</repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+  
+ </project>

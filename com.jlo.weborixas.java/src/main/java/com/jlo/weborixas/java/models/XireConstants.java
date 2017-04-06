@@ -2,6 +2,9 @@ package com.jlo.weborixas.java.models;
 
 public class XireConstants {
 	
+//refactor to properties
+	
+	
 	
 	/*Elements*/
 	public final static String FIRE = "Fire";

@@ -1,1 +1,13 @@
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/controllers/OrixaBackofficeController.java
 /home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/App.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/Xire.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/OrixaType.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/Characteristic.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/ElementType.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/XireConstants.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/configs/DynamoDBConfig.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/views/CharacteristicView.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/Element.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/Orixa.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/XireFactory.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/controllers/XirePlayController.java
