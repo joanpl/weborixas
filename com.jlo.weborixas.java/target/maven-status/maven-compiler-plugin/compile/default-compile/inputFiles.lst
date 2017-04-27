@@ -1,4 +1,5 @@
 /home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/controllers/OrixaBackofficeController.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/CharacteristicRepository.java
 /home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/App.java
 /home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/Xire.java
 /home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/OrixaType.java
@@ -11,3 +12,4 @@
 /home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/Orixa.java
 /home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/models/XireFactory.java
 /home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/controllers/XirePlayController.java
+/home/jlo/workspace/weborixas/com.jlo.weborixas.java/src/main/java/com/jlo/weborixas/java/DBInitializer.java
