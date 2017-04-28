@@ -10,10 +10,11 @@ import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 
 @Configuration
 @EnableDynamoDBRepositories
-  (basePackages = "com.baeldung.spring.data.dynamodb.repositories")
+  (basePackages = "com.jlo.weborixas.java.repositories")
 public class DynamoDBConfig {
  
     @Value("${amazon.dynamodb.endpoint}")
@@ -25,7 +26,7 @@ public class DynamoDBConfig {
     @Value("${amazon.aws.secretkey}")
     private String amazonAWSSecretKey;
  
-    @Bean
+    @Bean(name = "amazonDynamoDB")
     public AmazonDynamoDB amazonDynamoDB() {
         AmazonDynamoDB amazonDynamoDB 
           = new AmazonDynamoDBClient(amazonAWSCredentials());
@@ -42,4 +43,8 @@ public class DynamoDBConfig {
         return new BasicAWSCredentials(
           amazonAWSAccessKey, amazonAWSSecretKey);
     }
+    
+
+    
+    
 }

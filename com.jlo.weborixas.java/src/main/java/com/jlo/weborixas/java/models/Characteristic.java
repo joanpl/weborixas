@@ -8,7 +8,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 @DynamoDBTable(tableName = "characteristic")
 public class Characteristic {
 	
-	private Orixa orixa;
+//	private Orixa orixa;
 	
 	private String orixaName;
 	
@@ -25,20 +25,28 @@ public class Characteristic {
         return id;
     }
 	
-
+	
+	public void setId(String id)
+	{
+		this.id =id;
+	}
 	public Characteristic(String attribute, String orixaName) {
 		this.attribute=attribute;
 		this.orixaName=orixaName;
 		this.description = "";
 	}
 	
-	public Orixa getOrixa() {
-		return orixa;
+	public Characteristic() {
+		
 	}
-
-	public void setOrixa(Orixa orixa) {
-		this.orixa = orixa;
-	}
+	
+//	public Orixa getOrixa() {
+//		return orixa;
+//	}
+//
+//	public void setOrixa(Orixa orixa) {
+//		this.orixa = orixa;
+//	}
 
 	@DynamoDBAttribute
 	public String getOrixaName() {
